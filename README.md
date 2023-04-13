@@ -7,11 +7,7 @@
 # Contents
 
 	
-## Prepare Scratch Projects <a name="h1-2"></a>
 ### Example: Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`. <a name="h1-2-1"></a>
-## ENTWICKLUNGSUMGEBUNG VORBEREITEN <a name="h1-1"></a>
-### – RASPBERRY-PI-OS – <a name="h1-1-1"></a>
-### – WINDOWS 10, 11 – <a name="h1-1-2"></a>
 
 </summary>
 
@@ -29,7 +25,24 @@
 			</li>
 		</ul>
 	</li>
-	<li> <a href="#h1">Implementation</a> </li>
+	<li> <a href="#h1">Implementation</a> 
+		<ul>
+			<li><a href="#h1-1">Entwicklungsumgebung vorbereiten</a>
+				<ul>
+					<li><a href="#h1-1-1">RASPBERRY-PI-OS</a></li>
+					<li><a href="#h1-1-2">WINDOWS 10, 11</a></li>
+				</ul>
+			</li>
+			<li><a href="#h1-2">Prepare Scratch Projects</a>
+				<ul>
+					<li><a href="#h1-2-1">Download, link and install projects </a></li>
+					<li><a href="#h1-2-2">Run `scratch-desktop` in development mode </a></li>
+					<li><a href="#h1-2-3">Make a project __ build </a></li>
+					<li><a href="#h1-2-4">Make a project packaged build </a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
 <ul>
 	
 </details>
@@ -163,7 +176,8 @@ https://github.com/Menersar/scratch-extensions
 
 ## Prepare Scratch Projects <a name="h1-2"></a>
 
-### Example: Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`. <a name="h1-2-1"></a>
+### Download, link and install projects <a name="h1-2-1"></a>
+Example: Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
 
 <details>
 
@@ -250,7 +264,9 @@ npm install
 <br />
 
 
-### Example: Run `scratch-desktop` in development mode. <a name="h1-2-2"></a>
+### Run project in development mode <a name="h1-2-2"></a>
+
+Example: Run `scratch-desktop` in development mode.
 
 <details>
 
@@ -268,7 +284,9 @@ npm start
 <br />
 	
 	
-### Example: Make a `scratch-desktop` packaged build. <a name="h1-2-3"></a>
+### Make a project build <a name="h1-2-3"></a>
+	
+Example: Make a `scratch-desktop`__ build.
 
 <details>
 
@@ -286,7 +304,9 @@ npm run dist
 <br />
 
 
-### Example: Make a `scratch-desktop` packaged build. <a name="h1-2-4"></a>
+### Make a project packaged build <a name="h1-2-4"></a>
+	
+Example: Make a `scratch-desktop` packaged build.
 
 <details>
 
