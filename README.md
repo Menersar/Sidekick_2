@@ -160,6 +160,30 @@
 <br />
 <br />
 
+>---
+> #### Further Information and Links:
+>
+>
+> - Creation of Scratch 3 Extensions: <br />
+> https://medium.com/@hiroyuki.osaki/how-to-develop-your-own-block-for-scratch-3-0-1b5892026421
+>
+> - Implementaion of a Scratch 3 Extension with GPIO pin access. <br />
+> https://github.com/MrYsLab/s3onegpio
+>
+> - This document describes technical topics related to Scratch 3.0 extension development, including the Scratch 3.0 extension specification: <br />
+> https://github.com/LLK/scratch-vm/blob/develop/docs/extensions.md
+>	
+> - Scratch Block types:
+> https://medium.com/@hiroyuki.osaki/scratch-3-block-types-you-can-develop-and-samples-191b0d769b91
+>
+>
+> ---
+
+<br />
+<br />
+<br />
+<br />
+
 </details>
 
 
@@ -620,17 +644,4 @@ run npm install again
 <br />
 
 
-This document describes technical topics related to Scratch 3.0 extension development, including the Scratch 3.0 extension specification:
 
-https://github.com/LLK/scratch-vm/blob/develop/docs/extensions.md
-
-
-<br />
-<br />
-<br />
-<br />
-
-	
-block-types
-
-https://medium.com/@hiroyuki.osaki/scratch-3-block-types-you-can-develop-and-samples-191b0d769b91
