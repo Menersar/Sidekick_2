@@ -154,9 +154,9 @@ https://github.com/Menersar/scratch-extensions
 	
 	
 
-## Download and Link Projects <a name="h1-2"></a>
+## Prepare Scratch Projects <a name="h1-2"></a>
 
-Example: Link `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
+Example: Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
 
 <details>
 
