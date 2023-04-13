@@ -304,7 +304,9 @@ yarn add webpack --dev
 - Download `Sidekick` and link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
 	- My Method to keep the data local and in one place.
 
-<details>
+<details open>
+	
+<br />
 
 <summary>
 	Commands:	
@@ -362,7 +364,7 @@ npm link scratch-vm scratch-blocks scratch-gui
 npm install
 ```
 
-</details>
+</details open>
 
 
 <br />
@@ -373,7 +375,9 @@ npm install
 - Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
 	- The Method presented in the official [scratch-gui Wiki](https://github.com/LLK/scratch-gui/wiki/Getting-Started) for linking Scratch Repos. 
 
-<details>
+<details open>
+	
+<br />
 
 <summary>
 	Commands:	
@@ -479,7 +483,9 @@ npm install
 
 Example: Run `scratch-desktop` in development mode.
 
-<details>
+<details open>
+	
+<br />
 
 <summary>
 	Commands:	
@@ -506,6 +512,8 @@ Example: Make a `scratch-desktop`__ build.
 
 <details>
 
+<br />
+
 <summary>
 	Commands:	
 </summary>
@@ -527,7 +535,9 @@ npm run dist
 	
 Example: Make a `scratch-desktop` packaged build.
 
-<details>
+<details open>
+
+<br />
 
 <summary>
 	Commands:	
