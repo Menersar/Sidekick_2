@@ -156,12 +156,12 @@ https://github.com/Menersar/scratch-extensions
 
 ## Download and Link Projects <a name="h1-2"></a>
 
-Link `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
+Example: Link `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
 
 <details>
 
 <summary>
-	Example:	
+	Commands:	
 </summary>
 
 
@@ -241,6 +241,6 @@ npm link scratch-vm scratch-blocks scratch-gui
 npm start
 ```
 
-http://localhost:8601
-
 </details>
+
+http://localhost:8601
