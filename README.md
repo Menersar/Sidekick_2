@@ -495,14 +495,14 @@ Example: Run `scratch-desktop` in development mode.
 npm start
 ```
 	
-<br />
-<br />
+
 	
 </details>
 	
 
 
-
+<br />
+<br />
 	
 ### 2.3.2. Make a project build <a name="h1-3-2"></a>
 
@@ -522,13 +522,13 @@ Example: Make a `scratch-desktop`__ build.
 npm run dist
 ```
 	
-<br />
-<br />
+
 
 </details>
 	
 
-	
+<br />
+<br />
 
 
 ### 2.3.3. Make a project packaged build <a name="h1-3-3"></a>
@@ -547,8 +547,7 @@ Example: Make a `scratch-desktop` packaged build.
 npm run dist
 ```
 
-<br />
-<br />
+
 
 
 	
@@ -556,20 +555,23 @@ npm run dist
 
 <br />
 <br />
-<br />
+
 
 </details>
 	
 <br />
 <br />
 <br />
-<br />
 
 </details>
 
 
 
 
+<br />
+<br />
+<br />
+<br />
 
 
 
