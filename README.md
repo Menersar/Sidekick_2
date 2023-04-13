@@ -77,7 +77,7 @@
 
 
 
-<details open>
+<details>
 <summary>
 
 # 1. Information  <a name="h0"></a>
