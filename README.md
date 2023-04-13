@@ -479,7 +479,7 @@ npm install
 	
 
 	
-### Run project in development mode <a name="h1-3-1"></a>
+### 2.3.1. Run project in development mode <a name="h1-3-1"></a>
 
 Example: Run `scratch-desktop` in development mode.
 
@@ -504,13 +504,13 @@ npm start
 
 
 	
-### Make a project build <a name="h1-3-2"></a>
+### 2.3.2. Make a project build <a name="h1-3-2"></a>
 
 	
 	
 Example: Make a `scratch-desktop`__ build.
 
-<details>
+<details open>
 
 <br />
 
@@ -531,7 +531,7 @@ npm run dist
 	
 
 
-### Make a project packaged build <a name="h1-3-3"></a>
+### 2.3.3. Make a project packaged build <a name="h1-3-3"></a>
 	
 Example: Make a `scratch-desktop` packaged build.
 
