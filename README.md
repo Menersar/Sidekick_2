@@ -21,11 +21,14 @@ Design of the Scratch editor interface (`GUI`): [https://en.scratch-wiki.info/wi
   - [VM](#scratch-vm)
   - [Blocks](#scratch-blocks)
   - [Renderer](#scratch-render)
+  - [Desktop](#scratch-desktop)
 - There are also others, like `scratch-storage` and `scratch-audio`.
 
 ## [scratch-gui](https://github.com/LLK/scratch-gui)
 - Wiki: https://github.com/LLK/scratch-gui/wiki
 - React-based front end.
+- Graphical User Interface for creating and running Scratch 3.0 projects.
+- A set of React components that comprise the `GUI` for creating and running Scratch 3.0 projects
 
 ## [scratch-vm](https://github.com/LLK/scratch-vm)
 - Wiki: https://github.com/LLK/scratch-vm/wiki
@@ -46,3 +49,8 @@ Design of the Scratch editor interface (`GUI`): [https://en.scratch-wiki.info/wi
 - WebGL-based rendering engine for Scratch 3.0.
 - Handler of what appears in the `Stage Area`.
 - The `GUI` tells this what to do.
+
+## [scratch-desktop](https://github.com/LLK/scratch-desktop)
+- Scratch 3.0 as a self-contained desktop standalone application.
+- Note: The `scratch-desktop` branch of [scratch-gui](#scratch-gui) was used during development of the Scratch Desktop App.
+	- It held a few changes necessary for the Scratch app to function correctly, but are not yet merged into the main development branch.
