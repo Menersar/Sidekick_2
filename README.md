@@ -2,20 +2,26 @@
 
 
 
-## Scratch-Editor
+## Scratch Editor
 
 - Getting Started: https://github.com/LLK/scratch-gui/wiki/Getting-Started
+<p  align="center">
+		<img src="/images/Scratch-Editor.png" style="width: 50%">
+</p>
 
-![https://github.com/Menersar/Sidekick/blob/main/images/Scratch-Editor.png](https://github.com/Menersar/Sidekick/blob/main/images/Scratch-Editor.png)
+Design of the Scratch editor interface (`GUI`): [https://en.scratch-wiki.info/wiki/User_Interface](https://en.scratch-wiki.info/wiki/User_Interface)
+<p  align="center">
+		<img src="/images/Scratch_3.0_program_sections.png" style="width: 50%">
+</p>
 
-- The Scratch editor is built up modularly from several repos.
+- The `Scratch Editor` is built up modularly from several repos.
 - Each repo can stand alone.
 - The main Repos are:
   - [GUI](#scratch-gui)
   - [VM](#scratch-vm)
   - [Blocks](#scratch-blocks)
   - [Renderer](#scratch-render)
-- There are also others, like scratch-storage and scratch-audio.
+- There are also others, like `scratch-storage` and `scratch-audio`.
 
 ## [scratch-gui](https://github.com/LLK/scratch-gui)
 - Wiki: https://github.com/LLK/scratch-gui/wiki
@@ -23,11 +29,9 @@
 
 ## [scratch-vm](https://github.com/LLK/scratch-vm)
 - Wiki: https://github.com/LLK/scratch-vm/wiki
-- Manages state and does business logic. 
-- It sends the state to the `GUI`.
+- Defining Scratch extensions: https://github.com/LLK/scratch-vm/blob/develop/docs/extensions.md
 - Library for representing, running, and maintaining the state of computer programs written using [Scratch Blocks](#scratch-blocks).
-- Defining Scratch extensions: 
-https://github.com/LLK/scratch-vm/blob/develop/docs/extensions.md
+  - It sends the state to the `GUI`.
 
 ## [scratch-blocks](https://github.com/LLK/scratch-blocks)
 - Wiki: https://github.com/scratchfoundation/scratch-blocks/wiki
@@ -40,5 +44,5 @@ https://github.com/LLK/scratch-vm/blob/develop/docs/extensions.md
 
 ## [scratch-render](https://github.com/LLK/scratch-render)
 - WebGL-based rendering engine for Scratch 3.0.
-- Handler of what appears in the stage area.
+- Handler of what appears in the `Stage Area`.
 - The `GUI` tells this what to do.
