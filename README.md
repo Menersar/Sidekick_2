@@ -6,6 +6,13 @@
 
 # Contents
 
+	
+## Prepare Scratch Projects <a name="h1-2"></a>
+### Example: Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`. <a name="h1-2-1"></a>
+## ENTWICKLUNGSUMGEBUNG VORBEREITEN <a name="h1-1"></a>
+### – RASPBERRY-PI-OS – <a name="h1-1-1"></a>
+### – WINDOWS 10, 11 – <a name="h1-1-2"></a>
+
 </summary>
 
 <ul>
@@ -156,7 +163,7 @@ https://github.com/Menersar/scratch-extensions
 
 ## Prepare Scratch Projects <a name="h1-2"></a>
 
-Example: Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
+### Example: Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`. <a name="h1-2-1"></a>
 
 <details>
 
@@ -238,9 +245,43 @@ npm link scratch-vm scratch-blocks scratch-gui
 ```
 
 ```shell
-npm start
+npm install
 ```
 
 </details>
 
-http://localhost:8601
+
+<br />
+
+
+### Example: Run `scratch-desktop` in development mode. <a name="h1-2-2"></a>
+
+<details>
+
+<summary>
+	Commands:	
+</summary>
+
+```shell
+npm start
+```
+	
+</details>
+	
+
+<br />
+
+
+### Example: Make a `scratch-desktop` packaged build. <a name="h1-2-3"></a>
+
+<details>
+
+<summary>
+	Commands:	
+</summary>
+	
+```shell
+npm run dist
+```
+
+</details>
