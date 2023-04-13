@@ -6,9 +6,6 @@
 
 # Contents
 
-	
-### Example: Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`. <a name="h1-2-1"></a>
-
 </summary>
 
 <ul>
@@ -36,9 +33,13 @@
 			<li><a href="#h1-2">Prepare Scratch Projects</a>
 				<ul>
 					<li><a href="#h1-2-1">Download, link and install projects </a></li>
-					<li><a href="#h1-2-2">Run `scratch-desktop` in development mode </a></li>
-					<li><a href="#h1-2-3">Make a project __ build </a></li>
-					<li><a href="#h1-2-4">Make a project packaged build </a></li>
+				</ul>
+			</li>
+			<li><a href="#h1-3">Run and Build Scratch Projects</a>
+				<ul>
+					<li><a href="#h1-3-1">Run `scratch-desktop` in development mode </a></li>
+					<li><a href="#h1-3-2">Make a project __ build </a></li>
+					<li><a href="#h1-3-3">Make a project packaged build </a></li>
 				</ul>
 			</li>
 		</ul>
@@ -261,10 +262,10 @@ npm install
 </details>
 
 
-<br />
+## Rund and Build Scratch Projects <a name="h1-3"></a>
 
 
-### Run project in development mode <a name="h1-2-2"></a>
+### Run project in development mode <a name="h1-3-1"></a>
 
 Example: Run `scratch-desktop` in development mode.
 
@@ -284,7 +285,7 @@ npm start
 <br />
 	
 	
-### Make a project build <a name="h1-2-3"></a>
+### Make a project build <a name="h1-3-2"></a>
 	
 Example: Make a `scratch-desktop`__ build.
 
@@ -304,7 +305,7 @@ npm run dist
 <br />
 
 
-### Make a project packaged build <a name="h1-2-4"></a>
+### Make a project packaged build <a name="h1-3-3"></a>
 	
 Example: Make a `scratch-desktop` packaged build.
 
@@ -321,22 +322,43 @@ npm run dist
 </details>
 
 	
-	
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
-	
+
 Troubleshooting
+
 If you run into npm install errors, try these steps:
 
 run npm cache clean --force
 Delete the node_modules directory
 Delete package-lock.json
 run npm install again
-	
-	
-	
+
+
+<br />
+<br />
+<br />
+<br />
+
 
 This document describes technical topics related to Scratch 3.0 extension development, including the Scratch 3.0 extension specification:
+
 https://github.com/LLK/scratch-vm/blob/develop/docs/extensions.md
+
+
+<br />
+<br />
+<br />
+<br />
+
 	
 block-types
+
 https://medium.com/@hiroyuki.osaki/scratch-3-block-types-you-can-develop-and-samples-191b0d769b91
