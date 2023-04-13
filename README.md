@@ -1,6 +1,7 @@
 # Sidekick
 
 <!-- <details open> -->
+
 <details>
 <summary>
 
@@ -8,47 +9,64 @@
 
 </summary>
 
-<ul>
+<ol>
 	<li> <a href="#h0">Information</a>
-		<ul>
-			<li><a href="#h0-1">Scratch Editor</a>
-				<ul>
-					<li><a href="#h0-1-1">scratch-desktop</a></li>
-					<li><a href="#h0-1-2">scratch-gui</a></li>
-					<li><a href="#h0-1-3">scratch-vm</a></li>
-					<li><a href="#h0-1-4">scratch-blocks</a></li>
-					<li><a href="#h0-1-5">scratch-render</a></li>
-				</ul>
-			</li>
-		</ul>
+		<ol>
+			<div>1.1. Scratch Editor
+				<ol>
+					<div>1.1.1. scratch-desktop</div>
+					<div>1.1.2. scratch-gui</div>
+					<div>1.1.3. scratch-vm</div>
+					<div>1.1.4. scratch-blocks</div>
+					<div>1.1.5. scratch-render</div>
+				</ol>
+			</div>
+		</ol>
 	</li>
 	<li> <a href="#h1">Implementation</a> 
-		<ul>
-			<li><a href="#h1-1">Entwicklungsumgebung vorbereiten</a>
-				<ul>
-					<li><a href="#h1-1-1">RASPBERRY-PI-OS</a></li>
-					<li><a href="#h1-1-2">WINDOWS 10, 11</a></li>
-				</ul>
-			</li>
-			<li><a href="#h1-2">Prepare Scratch Projects</a>
-				<ul>
-					<li><a href="#h1-2-1">Download, link and install projects </a></li>
-				</ul>
-			</li>
-			<li><a href="#h1-3">Run and Build Scratch Projects</a>
-				<ul>
-					<li><a href="#h1-3-1">Run `scratch-desktop` in development mode </a></li>
-					<li><a href="#h1-3-2">Make a project __ build </a></li>
-					<li><a href="#h1-3-3">Make a project packaged build </a></li>
-				</ul>
-			</li>
-		</ul>
+		<ol>
+			<div>2.1. Entwicklungsumgebung vorbereiten
+				<ol>
+					<div>2.1.1. Raspberry Pi OS</div>
+					<div>2.1.2. Windows 10, 11</div>
+				</ol>
+			</div>
+			<div>2.2. Prepare Scratch Projects
+				<ol>
+					<div>2.2.1. Download, link and install projects </div>
+				</ol>
+			</div>
+			<div>2.3. Run and Build Scratch Projects
+				<ol>
+					<div>2.3.1. Run project in development mode</div>
+					<div>2.3.2. Make a project build</div>
+					<div>2.3.3. Make a project packaged build</div>
+				</ol>
+			</div>
+		</ol>
 	</li>
-<ul>
+</ol>
+
+<br />
 	
+<br />
+<br />
+<br />
+<br />
+
+---
+
+<br />
+
 </details>
 
-# Information  <a name="h0"></a>
+<details>
+<summary>
+
+# 1. Information  <a name="h0"></a>
+
+</summary>
+
 ## Scratch Editor <a name="h0-1"></a>
 
 - Getting Started: https://github.com/LLK/scratch-gui/wiki/Getting-Started
@@ -71,10 +89,16 @@ Design of the Scratch editor interface (`GUI`): [https://en.scratch-wiki.info/wi
   - [Renderer](#scratch-render)
 - There are also others, like `scratch-storage` and `scratch-audio`.
 	
+<br />
+<br />
+	
 ### [scratch-desktop](https://github.com/LLK/scratch-desktop) <a name="h0-1-1"></a>
 - Scratch 3.0 as a self-contained desktop standalone application.
 - Note: The `scratch-desktop` branch of [scratch-gui](#scratch-gui) was used during development of the Scratch Desktop App.
 	- It held a few changes necessary for the Scratch app to function correctly, but are not yet merged into the main development branch.
+
+<br />
+<br />
 
 ### [scratch-gui](https://github.com/LLK/scratch-gui/tree/scratch-desktop) <a name="h0-1-2"></a>
 - Wiki: https://github.com/LLK/scratch-gui/wiki
@@ -82,11 +106,17 @@ Design of the Scratch editor interface (`GUI`): [https://en.scratch-wiki.info/wi
 - Graphical User Interface for creating and running Scratch 3.0 projects.
 - A set of React components that comprise the `GUI` for creating and running Scratch 3.0 projects
 
+<br />
+<br />
+
 ### [scratch-vm](https://github.com/LLK/scratch-vm) <a name="h0-1-3"></a>
 - Wiki: https://github.com/LLK/scratch-vm/wiki
 - Defining Scratch extensions: https://github.com/LLK/scratch-vm/blob/develop/docs/extensions.md
 - Library for representing, running, and maintaining the state of computer programs written using [Scratch Blocks](#scratch-blocks).
   - It sends the state to the `GUI`.
+
+<br />
+<br />
 
 ### [scratch-blocks](https://github.com/LLK/scratch-blocks) <a name="h0-1-4"></a>
 - Wiki: https://github.com/scratchfoundation/scratch-blocks/wiki
@@ -96,17 +126,47 @@ Design of the Scratch editor interface (`GUI`): [https://en.scratch-wiki.info/wi
 - Together with the [Scratch VM](#scratch-vm) this codebase allows for the rapid design and development of visual programming interfaces.
 - Repo handles the **UI** and **logic** for the portions of the editor that blocks appear in. 
    - Talks to the `GUI`, which often pipes things through to the [VM](#scratch-vm).
+	
+<br />
+<br />
 
 ### [scratch-render](https://github.com/LLK/scratch-render) <a name="h0-1-5"></a>
 - WebGL-based rendering engine for Scratch 3.0.
 - Handler of what appears in the `Stage Area`.
 - The `GUI` tells this what to do.
+	
+<br />
+<br />
+<br />
+<br />
 
+---
 
-# Implementation <a name="h1"></a>
-## ENTWICKLUNGSUMGEBUNG VORBEREITEN <a name="h1-1"></a>
+<br />
 
-### – RASPBERRY-PI-OS – <a name="h1-1-1"></a>
+	
+</details>
+
+<details>
+<summary>
+
+# 2. Implementation <a name="h1"></a>
+
+</summary>
+
+<details>
+<summary>
+
+## 2.1. Entwicklungsumgebung vorbereiten <a name="h1-1"></a>
+
+</summary>
+
+<details>
+<summary>
+
+### 2.1.1. Raspberry Pi OS <a name="h1-1-1"></a>
+
+</summary>
 	
 - [ ] Optional: Bereinigen des `npm`-Cache und Entfernen von `NodeJS` und `npm` vom System.
 ```console
@@ -135,9 +195,17 @@ sudo npm install --global yarn
 - [ ] Herunterladen und Entpacken des GitHub-Repositories `scratch-extension`. <br />
 https://github.com/Menersar/scratch-extensions
 
----
+<br />
+<br />
 
-### – WINDOWS 10, 11 – <a name="h1-1-2"></a>
+</details>
+
+<details>
+<summary>
+
+### 2.1.2. Windows 10, 11 <a name="h1-1-2"></a>
+
+</summary>
 
 - [ ] Optional: Deinstallieren von `NodeJS`. <br />
 ```console
@@ -171,14 +239,101 @@ yarn add webpack --dev
 https://github.com/Menersar/scratch-extensions
 
 <br />
+<br />
+<br />
+<br />
 
+---
 	
-	
+<br />
+</details>
+</details>
 
-## Prepare Scratch Projects <a name="h1-2"></a>
 
-### Download, link and install projects <a name="h1-2-1"></a>
-Example: Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
+<details>
+<summary>
+
+## 2.2. Prepare Scratch Projects <a name="h1-2"></a>
+
+</summary>
+
+### 2.2.1. Download, link and install projects <a name="h1-2-1"></a>
+
+<br />
+
+#### METHOD 1
+
+- Download `Sidekick` and link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
+	- My Method to keep the data local and in one place.
+
+<details>
+
+<summary>
+	Commands:	
+</summary>
+
+```shell
+git clone https://github.com/menersar/Sidekick # if making changes fork the project and check out your copy
+```
+
+```shell
+cd Sidekick/scratch-vm
+```
+
+```shell
+npm install
+```
+
+```shell
+npm link
+```
+
+```shell
+cd ../scratch-blocks
+```
+
+```shell
+npm install
+```
+
+```shell
+npm link
+```
+
+```shell
+cd ../scratch-gui
+```
+
+```shell
+npm install
+```
+
+```shell
+npm link
+```
+
+```shell
+cd ../scratch-desktop
+```
+
+```shell
+npm link scratch-vm scratch-blocks scratch-gui
+```
+
+```shell
+npm install
+```
+
+</details>
+
+
+<br />
+<br />
+
+
+#### METHOD 2
+- Download, link and install `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
+	- The Method presented in the official [scratch-gui Wiki](https://github.com/LLK/scratch-gui/wiki/Getting-Started) for linking Scratch Repos. 
 
 <details>
 
@@ -262,8 +417,23 @@ npm install
 </details>
 
 
-## Rund and Build Scratch Projects <a name="h1-3"></a>
+<br />
+<br />
+<br />
+<br />
 
+---
+
+<br />
+
+</details>
+
+<details>
+<summary>
+
+## 2.3. Run and Build Scratch Projects <a name="h1-3"></a>
+
+</summary>
 
 ### Run project in development mode <a name="h1-3-1"></a>
 
@@ -282,6 +452,7 @@ npm start
 </details>
 	
 
+<br />
 <br />
 	
 	
@@ -303,6 +474,7 @@ npm run dist
 	
 
 <br />
+<br />
 
 
 ### Make a project packaged build <a name="h1-3-3"></a>
@@ -319,9 +491,21 @@ Example: Make a `scratch-desktop` packaged build.
 npm run dist
 ```
 
+<br />
+<br />
+<br />
+<br />
+
+---
+
+<br />
+	
 </details>
 
-	
+</details>
+
+</details>
+
 <br />
 <br />
 <br />
@@ -331,6 +515,9 @@ npm run dist
 <br />
 <br />
 
+---
+
+<br />
 
 Troubleshooting
 
