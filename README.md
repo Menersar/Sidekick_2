@@ -198,7 +198,7 @@
 	
 
 	
-<details>
+<details open>
 <summary>
 
 ### 2.1.1. Raspberry Pi OS <a name="h1-1-1"></a>
@@ -236,7 +236,7 @@ sudo npm install --global yarn
 	
 
 	
-<details>
+<details open>
 <summary>
 
 ### 2.1.2. Windows 10, 11 <a name="h1-1-2"></a>
