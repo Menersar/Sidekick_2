@@ -218,7 +218,7 @@ sudo n 16.0.0
 ```
 
 - [ ] Optional: Verify the `NodeJS` version. <br />
-(Ausgabe sollte `v16.0.0` zurückgeben.)
+(Return value should be `v16.0.0`.)
 ```console
 node --version
 ```
@@ -254,7 +254,7 @@ winget install OpenJS.NodeJS --version 16.0.0
 ```
 
 - [ ] Optional: Verify the `NodeJS` version. <br />
-(Ausgabe sollte `v16.0.0` zurückgeben.)
+(Return value should be `v16.0.0`.)
 ```console
 node --version
 ```
