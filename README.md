@@ -336,55 +336,55 @@ yarn add webpack --dev
 	Commands:	
 </summary>
 
-```shell
+```console
 git clone https://github.com/menersar/Sidekick # if making changes fork the project and check out your copy
 ```
 
-```shell
+```console
 cd Sidekick/scratch-vm
 ```
 
-```shell
+```console
 npm install
 ```
 
-```shell
+```console
 npm link
 ```
 
-```shell
+```console
 cd ../scratch-blocks
 ```
 
-```shell
+```console
 npm install
 ```
 
-```shell
+```console
 npm link
 ```
 
-```shell
+```console
 cd ../scratch-gui
 ```
 
-```shell
+```console
 npm install
 ```
 
-```shell
+```console
 npm link
 ```
 
-```shell
+```console
 cd ../scratch-desktop
 ```
 
-```shell
+```console
 npm link scratch-vm scratch-blocks scratch-gui
 ```
 
-```shell
+```console
 npm install
 ```
 
@@ -408,75 +408,75 @@ npm install
 </summary>
 
 
-```shell
+```console
 mkdir Scratch
 ```
 
-```shell
+```console
 cd Scratch
 ```
 
-```shell
+```console
 git clone https://github.com/llk/scratch-desktop # if making changes fork the project and check out your copy
 ```
 
-```shell
+```console
 git clone https://github.com/llk/scratch-gui # if making changes fork the project and check out your copy
 ```
 
-```shell
+```console
 git clone https://github.com/llk/scratch-vm # if making changes fork the project and check out your copy
 ```
 
-```shell
+```console
 git clone https://github.com/llk/scratch-blocks # if making changes fork the project and check out your copy
 ```
 
-```shell
+```console
 cd scratch-vm
 ```
 
-```shell
+```console
 npm install
 ```
 
-```shell
+```console
 npm link
 ```
 
-```shell
+```console
 cd ../scratch-blocks
 ```
 
-```shell
+```console
 npm install
 ```
 
-```shell
+```console
 npm link
 ```
 
-```shell
+```console
 cd ../scratch-gui
 ```
 
-```shell
+```console
 npm install
 ```
 
-```shell
+```console
 npm link
 ```
 
-```shell
+```console
 cd ../scratch-desktop
 ```
 
-```shell
+```console
 npm link scratch-vm scratch-blocks scratch-gui
 ```
 
-```shell
+```console
 npm install
 ```
 <br />
@@ -515,7 +515,7 @@ Example: Run `scratch-desktop` in development mode.
 	Commands:	
 </summary>
 
-```shell
+```console
 npm start
 ```
 	
@@ -542,7 +542,7 @@ Example: Make a `scratch-desktop`__ build.
 	Commands:	
 </summary>
 	
-```shell
+```console
 npm run dist
 ```
 	
@@ -567,7 +567,7 @@ Example: Make a `scratch-desktop` packaged build.
 	Commands:	
 </summary>
 	
-```shell
+```console
 npm run dist
 ```
 
@@ -628,15 +628,24 @@ npm run dist
 
 <br />
 
-Troubleshooting
+# Troubleshooting
 
 If you run into npm install errors, try these steps:
-
+```console
 run npm cache clean --force
-Delete the node_modules directory
-Delete package-lock.json
-run npm install again
+```
 
+```console
+Delete the node_modules directory
+```
+
+```console
+Delete package-lock.json
+```
+
+```console
+run npm install again
+```
 
 <br />
 <br />
