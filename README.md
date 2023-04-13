@@ -1,8 +1,31 @@
 # Sidekick
 
+<!-- <details open> -->
+<details>
+<summary>
 
+# Contents
 
-## Scratch Editor
+</summary>
+
+<ul>
+	<li> <a href="#h0">Information</a>
+		<ul>
+			<li><a href="#h0-1">Scratch Editor</a></li>
+			<li><a href="#h0-1-1">scratch-gui</a></li>
+			<li><a href="#h0-1-2">scratch-vm</a></li>
+			<li><a href="#h0-1-3">scratch-blocks</a></li>
+			<li><a href="#h0-1-4">scratch-render</a></li>
+			<li><a href="#h0-1-4">scratch-desktop</a></li>
+		</ul>
+	</li>
+	<li> <a href="#h1">Implementation</a> </li>
+<ul>
+	
+</details>
+
+# Information  <a name="h0"></a>
+## Scratch Editor <a name="h0-1"></a>
 
 - Getting Started: https://github.com/LLK/scratch-gui/wiki/Getting-Started
 <p  align="center">
@@ -24,19 +47,19 @@ Design of the Scratch editor interface (`GUI`): [https://en.scratch-wiki.info/wi
   - [Desktop](#scratch-desktop)
 - There are also others, like `scratch-storage` and `scratch-audio`.
 
-## [scratch-gui](https://github.com/LLK/scratch-gui/tree/scratch-desktop)
+### [scratch-gui](https://github.com/LLK/scratch-gui/tree/scratch-desktop) <a name="h0-1-1"></a>
 - Wiki: https://github.com/LLK/scratch-gui/wiki
 - React-based front end.
 - Graphical User Interface for creating and running Scratch 3.0 projects.
 - A set of React components that comprise the `GUI` for creating and running Scratch 3.0 projects
 
-## [scratch-vm](https://github.com/LLK/scratch-vm)
+### [scratch-vm](https://github.com/LLK/scratch-vm) <a name="h0-1-2"></a>
 - Wiki: https://github.com/LLK/scratch-vm/wiki
 - Defining Scratch extensions: https://github.com/LLK/scratch-vm/blob/develop/docs/extensions.md
 - Library for representing, running, and maintaining the state of computer programs written using [Scratch Blocks](#scratch-blocks).
   - It sends the state to the `GUI`.
 
-## [scratch-blocks](https://github.com/LLK/scratch-blocks)
+### [scratch-blocks](https://github.com/LLK/scratch-blocks) <a name="h0-1-3"></a>
 - Wiki: https://github.com/scratchfoundation/scratch-blocks/wiki
 - Branched from and based on Google's [Blockly](https://developers.google.com/blockly) project.
 - Fork of Google's [Blockly](https://github.com/google/blockly) project that provides a design specification and codebase for building creative computing interfaces.
@@ -45,12 +68,82 @@ Design of the Scratch editor interface (`GUI`): [https://en.scratch-wiki.info/wi
 - Repo handles the **UI** and **logic** for the portions of the editor that blocks appear in. 
    - Talks to the `GUI`, which often pipes things through to the [VM](#scratch-vm).
 
-## [scratch-render](https://github.com/LLK/scratch-render)
+### [scratch-render](https://github.com/LLK/scratch-render) <a name="h0-1-4"></a>
 - WebGL-based rendering engine for Scratch 3.0.
 - Handler of what appears in the `Stage Area`.
 - The `GUI` tells this what to do.
 
-## [scratch-desktop](https://github.com/LLK/scratch-desktop)
+### [scratch-desktop](https://github.com/LLK/scratch-desktop) <a name="h0-1-5"></a>
 - Scratch 3.0 as a self-contained desktop standalone application.
 - Note: The `scratch-desktop` branch of [scratch-gui](#scratch-gui) was used during development of the Scratch Desktop App.
 	- It held a few changes necessary for the Scratch app to function correctly, but are not yet merged into the main development branch.
+
+
+# Implementation <a name="h1"></a>
+## ENTWICKLUNGSUMGEBUNG VORBEREITEN <a name="h1-1"></a>
+
+### – RASPBERRY-PI-OS – <a name="h1-1-1"></a>
+	
+- [ ] Optional: Bereinigen des `npm`-Cache und Entfernen von `NodeJS` und `npm` vom System.
+```console
+sudo npm cache clean --force
+sudo apt remove nodejs npm
+```
+
+- [ ] Installieren des `npm`-Version-Managers, `n`, und damit Neuinstallieren von `NodeJS v16.0.0`.
+```console
+sudo npm install --global n
+sudo n 16.0.0
+```
+
+- [ ] Optional: Überprüfen der `NodeJS`-Version. <br />
+(Ausgabe sollte `v16.0.0` zurückgeben.)
+```console
+node --version
+```
+
+- [ ] Installiernen von `yarn`. <br />
+(Viele Anleitungen verwenden `npm`; zuverlässig hat es bei mir mit `yarn` funktioniert.)
+```console
+sudo npm install --global yarn
+```
+
+- [ ] Herunterladen und Entpacken des GitHub-Repositories `scratch-extension`. <br />
+https://github.com/Menersar/scratch-extensions
+
+---
+
+### – WINDOWS 10, 11 – <a name="h1-1-2"></a>
+
+- [ ] Optional: Deinstallieren von `NodeJS`. <br />
+```console
+winget uninstall Node.js
+```
+
+- [ ] Installieren von `NodeJS v16.0.0`. <br />
+```console
+winget install OpenJS.NodeJS --version 16.0.0
+```
+
+- [ ] Optional: Überprüfen der `NodeJS`-Version. <br />
+(Ausgabe sollte `v16.0.0` zurückgeben.)
+```console
+node --version
+```
+
+- [ ] Installieren von `yarn`. <br />
+(Viele Anleitungen verwenden `npm`; zuverlässig hat es bei mir mit `yarn` funktioniert.)
+```console
+winget install Yarn.Yarn
+```
+
+- [ ] Installieren von `webpack` mit `yarn`. <br />
+(Hauptsächlich verwendet, um JavaScript-Dateien für Browsernutzung zu bündeln.)
+```console
+yarn add webpack --dev
+```
+
+- [ ] Herunterladen und Entpacken des GitHub-Repositories `scratch-extension`. <br />
+https://github.com/Menersar/scratch-extensions
+
+<br />
