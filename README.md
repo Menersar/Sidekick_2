@@ -155,7 +155,15 @@ https://github.com/Menersar/scratch-extensions
 	
 
 ## Download and Link Projects <a name="h1-2"></a>
-- Example: Link `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
+
+Link `scratch-desktop`, `scratch-gui`, `scratch-vm` and `scratch-blocks`.
+
+<details>
+
+<summary>
+	Example:	
+</summary>
+
 
 ```shell
 mkdir Scratch
@@ -234,3 +242,5 @@ npm start
 ```
 
 http://localhost:8601
+
+</details>
