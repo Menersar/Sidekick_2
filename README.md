@@ -24,7 +24,7 @@ Design of the Scratch editor interface (`GUI`): [https://en.scratch-wiki.info/wi
   - [Desktop](#scratch-desktop)
 - There are also others, like `scratch-storage` and `scratch-audio`.
 
-## [scratch-gui](https://github.com/LLK/scratch-gui)
+## [scratch-gui](https://github.com/LLK/scratch-gui/tree/scratch-desktop)
 - Wiki: https://github.com/LLK/scratch-gui/wiki
 - React-based front end.
 - Graphical User Interface for creating and running Scratch 3.0 projects.
