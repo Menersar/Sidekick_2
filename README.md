@@ -9,10 +9,10 @@
 - The Scratch editor is built up modularly from several repos.
 - Each repo can stand alone.
 - The main Repos are:
-  - [GUI](scratch-gui)
-  - VM
-  - Scratch Blocks
-  - Renderer
+  - [GUI](#scratch-gui)
+  - [VM](#scratch-vm)
+  - [Blocks](#scratch-blocks)
+  - [Renderer](#scratch-renderer)
 - There are also others, like scratch-storage and scratch-audio.
 
 ## [scratch-gui](https://github.com/LLK/scratch-gui)
