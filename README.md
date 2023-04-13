@@ -209,10 +209,6 @@ npm link
 ```
 
 ```shell
-npm run watch
-```
-
-```shell
 cd ../scratch-blocks
 ```
 
@@ -270,8 +266,8 @@ npm start
 	
 
 <br />
-
-
+	
+	
 ### Example: Make a `scratch-desktop` packaged build. <a name="h1-2-3"></a>
 
 <details>
@@ -285,3 +281,42 @@ npm run dist
 ```
 
 </details>
+	
+
+<br />
+
+
+### Example: Make a `scratch-desktop` packaged build. <a name="h1-2-4"></a>
+
+<details>
+
+<summary>
+	Commands:	
+</summary>
+	
+```shell
+npm run dist
+```
+
+</details>
+
+	
+	
+
+	
+Troubleshooting
+If you run into npm install errors, try these steps:
+
+run npm cache clean --force
+Delete the node_modules directory
+Delete package-lock.json
+run npm install again
+	
+	
+	
+
+This document describes technical topics related to Scratch 3.0 extension development, including the Scratch 3.0 extension specification:
+https://github.com/LLK/scratch-vm/blob/develop/docs/extensions.md
+	
+block-types
+https://medium.com/@hiroyuki.osaki/scratch-3-block-types-you-can-develop-and-samples-191b0d769b91
