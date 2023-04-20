@@ -7,6 +7,7 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "clean": "rimraf ./dist ./static/assets",
+    "clean2": "(npm install rimraf -g && rimraf ../scratch-gui/node_modules && rimraf ../scratch-blocks/node_modules && rimraf ../scratch-vm/node_modules && rimraf ./node_modules) && npm run clean && npm cache clean --force",
     "start": "mkdirp ./dist && electron-webpack dev --bail --display-error-details --env.minify=false --no-progress",
     "compile": "mkdirp ./dist && electron-webpack --bail --display-error-details --env.minify=false --no-progress",
     "fetch": "rimraf ./static/assets/ && mkdirp ./static/assets/ && node ./scripts/fetchMediaLibraryAssets.js",
@@ -17,14 +18,18 @@
     "doBuild": "node ./scripts/electron-builder-wrapper.js",
     "dist": "npm run clean && npm run compile && npm run fetch && npm run doBuild -- --mode=dist",
     "distDev": "npm run clean && npm run compile && npm run fetch && npm run doBuild -- --mode=dev",
+    "prepare": "(cd ../scratch-gui && npm install && npm link) && (cd ../scratch-blocks && npm install && npm link) && (cd ../scratch-vm && npm install && npm link) && (cd ../scratch-desktop && npm link scratch-gui scratch-blocks scratch-vm && npm install)",
     "test": "npm run test:lint",
     "test:lint": "eslint --cache --color --ext .jsx,.js ."
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/LLK/scratch-desktop.git"
+    "url": "https://github.com/Menersar/scratch-desktop.git"
   },
   "dependencies": {
+    "scratch-blocks": "file:../scratch-blocks",
+    "scratch-gui": "file:../scratch-gui",
+    "scratch-vm": "file:../scratch-vm",
     "source-map-support": "^0.5.19"
   },
   "devDependencies": {
@@ -66,7 +71,6 @@
     "react-redux": "5.1.2",
     "redux": "3.7.2",
     "rimraf": "^3.0.2",
-    "scratch-gui": "github:LLK/scratch-gui#scratch-desktop-v3.29.0",
     "uuid": "^8.0.0",
     "webpack": "^4.43.0",
     "webpack-merge": "4.2.2"

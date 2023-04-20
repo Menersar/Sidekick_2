@@ -44,3 +44,19 @@ appx:
 nsis:
   oneClick: false # allow user to choose per-user or per-machine
   artifactName: "Scratch ${version} Setup.${ext}"
+
+# Source Information: https://www.electron.build/configuration/linux
+linux:
+  category: Education
+  icon: buildResources/ScratchDesktop.ico
+  desktop:
+    - Encoding: UTF-8
+    - Name: ScratchDesktop
+    - Icon: buildResources/linux/150x150.png
+    - Type: Application
+    - Terminal: false
+  target:
+    - deb
+
+deb:
+  depends: ["libnotify4", "libxtst6", "libnss3"]
