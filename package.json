@@ -1,0 +1,6 @@
+{
+"scripts": {
+    "sidekick-download": "git clone https://github.com/Menersar/scratch-gui && git clone https://github.com/Menersar/scratch-blocks && git clone https://github.com/Menersar/scratch-vm && git clone https://github.com/Menersar/scratch-desktop && git clone https://github.com/Menersar/closure-library.git",
+    "sidekick": "(cd scratch-vm && npm install && npm link) && (cd .. && cd closure-library && npm install && npm link) && (cd .. && cd scratch-blocks && npm link google-closure-library && npm install --save-dev && npm install && npm link) && (cd .. && cd scratch-gui && npm install && npm link) && (cd .. && cd scratch-desktop && npm install && npm link scratch-vm scratch-blocks scratch-gui) && npm start"
+  }
+}
